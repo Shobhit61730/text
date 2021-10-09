@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Navigation bar</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+			box-sizing: border-box;
+				
+			}
+			header{
+				background-image: url(http://wallpaperheart.com/wp-content/uploads/2018/08/hd-desktop-wallpaper-9.jpg);
+				height: 500px;
+				width: 100%;
+				
+
+			}
+				nav{
+				height: 80px;
+				
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding:0px 50px 0px 100px; 
+			}
+		nav .logo{
+				font-size: 33px;
+				color: white;
+				font-weight: 600;
+			}
+		nav ul{
+				display: flex;
+				list-style: none;
+			}
+		nav ul li{
+				margin: 0 8px;
+			}
+		nav ul li a{
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+				font-weight: 500;
+			}
+		nav ul li a:hover{
+				color: cyan;
+			}
+						
+							
+			nav .menu-btn i{
+								color: white;
+								font-size: 22px;
+								cursor: pointer;
+								display: none;
+							}
+									#click{
+							display: none;
+						}
+			#click:checked~.menu-btn i:before{
+							content:"\f00d";
+						}
+						.cont h1{
+							color: white;
+							margin-left:33%;
+							margin-top: 10%; 
+									}
+									.cont h1:hover{
+										color: lightcoral;
+										text-decoration: underline;
+									}
+									.btn1{
+										margin-left: 40%;
+										border: 1px solid lightblue; 
+										border-radius: 8px;
+										margin-top: 1%;
+									}
+									.btn2{
+										margin-top: 1%;
+										border: 1px solid lightblue;
+										border-radius: 8px;
+									}
+									.btn1:hover,.btn2:hover{
+										background-color: blue;
+									}
+
+									.container1{
+										border: 2px solid blue;
+										width: 100%;
+										height: 360px;
+									}
+									
+									@media (max-width: 940px){
+										.container1{
+											height: 800px;
+											width: 100%;
+										}
+										.col1{
+											width: 100%;
+										}
+										.col2{
+											width: 100%;
+										}
+								
+									}
+									@media (max-width: 600px){
+										.container1{
+											height: 1000px;
+											width: 100%;
+										}
+										.col1{
+											width: 100%;
+										}
+										.col2{
+											width: 100%;
+										}
+									}
+										@media (max-width: 400px){
+										.container1{
+											height: 1400px;
+											width: 100%;
+										}
+										.col1{
+											width: 100%;
+										}
+										.col2{
+											width: 100%;
+										}
+									}
+
+				
+									
+								
+									
+						
+														
+			
+		@media (max-width: 940px){
+			
+		nav .menu-btn i{
+				display: block;
+			}
+														
+								#click:checked~ul{
+								left: 0%;
+							}
+															
+					nav ul{
+					position: fixed;
+					top: 80px;
+					left: -1000px;
+					background:grey;
+					height: 100vh;
+					width: 100%;
+					display: block;
+					text-align: center;
+					transition: all 0.5s ease;
+				}
+		nav ul li{
+					margin: 40px 0;
+				}
+			}
+			
+				
+			
+			#footer{
+				background-color: black;
+				margin-top: 10px;
+				
+			}
+			.row{
+																display: flex;
+
+			}
+				.column{
+				width: 25%;
+				line-height: 30px;
+				padding-top: 4px;
+				padding-bottom: 4px;
+				padding-left: 8px;
+				padding-right: 4px;
+			}
+		.column h3{
+				color: grey;
+			}
+			.column h3:hover{
+				color:blue;
+				text-decoration: underline;
+			}
+			ul li{
+				list-style: none;
+			}
+			ul li a{
+				text-decoration: none;
+				color: white;
+			}
+			a:hover{
+				color: cyan;
+			}
+		
+			
+			.social-media a{
+				color: white;
+				
+			}
+
+			.social-media a:hover{
+				background-color: grey;
+				color: blue;
+			}
+			@media (max-width: 800px){
+				.row{
+					display: block;
+				}
+				.column h3{
+							margin-right: 40px;
+				}
+				ul li a{
+										margin-right: 40px;
+					
+				}
+				
+		}
+
+		/* About Us*/
+		#aboutus{
+			margin-top: 30px;
+		}
+		#aboutus h1{
+			text-align: center;
+			text-decoration: underline;
+			color: coral;
+												
+		}
+		#aboutus p{
+			margin-left: 350px;
+			margin-right: 200px;
+			margin-bottom: 70px;
+			margin-top: 50px;
+							}
+				@media (max-width: 500px)	{
+					#aboutus{
+			margin-top: 30px;
+		}
+		#aboutus h1{
+			text-align: center;
+			text-decoration: underline;
+			color: coral;
+												
+		}
+		#aboutus p{
+			margin-left: 120px;
+			margin-right: 50px;
+			margin-bottom: 70px;
+			margin-top: 50px;
+							}
+				}		
+							/* Products*/
+							#products{
+								margin-top: 30px;
+							}
+							#products h1{
+								text-align: center;
+			text-decoration: underline;
+			color: coral;
+							}
+								#products p{
+									margin-left: 350px;
+			margin-right: 350px;
+			margin-bottom: 20px;
+			margin-top: 10px;
+								}
+								@media (max-width: 500px){
+									#products{
+								margin-top: 30px;
+							}
+							#products h1{
+								text-align: center;
+			text-decoration: underline;
+			color: coral;
+							}
+								#products p{
+									margin-left: 120px;
+			margin-right: 100px;
+			margin-bottom: 20px;
+			margin-top: 10px;
+								}
+								}
+								/*productsprices*/
+							#productsprices{
+								display: flex;
+								align-items: center;
+								justify-content: center;
+							}
+							#productsprices img{
+								height: 200px;
+								width: 200px;
+								margin: 10px;
+								border-radius: 10px;
+								background-size: cover;
+								box-shadow: 30px;
+								margin-bottom: 3px;
+
+							}
+							/* otherproductsprices*/
+								#otherproductsprices{
+								display: flex;
+								align-items: center;
+								justify-content: center;
+							}
+							#otherproductsprices img{
+								height: 200px;
+								width: 200px;
+								margin: 10px;
+							 border-radius: 10px;
+								background-size: cover;
+									box-shadow: 30px;
+									margin-bottom: 3px;
+
+
+
+							}
+							#contactUs{
+								margin-top: 30px;
+							}
+							#contactUs h1{
+								text-align: center;
+			text-decoration: underline;
+			color: coral;
+							}
+							#contactUs p{
+									margin-left: 400px;
+			margin-right: 350px;
+			margin-bottom: 20px;
+			margin-top: 10px;
+							}
+							@media (max-width: 500px){
+								#contactUs{
+								margin-top: 30px;
+							}
+							#contactUs h1{
+								text-align: center;
+			text-decoration: underline;
+			color: coral;
+							}
+							#contactUs p{
+									margin-left: 120px;
+			margin-right: 100px;
+			margin-bottom: 20px;
+			margin-top: 10px;
+							}
+						}
+
+		/*Sign in*/
+		#signin{
+			margin-top: 30px;
+			
+		}
+		
+		#signin h1{
+			text-align: center;
+			text-decoration: underline;
+			color:coral;
+		}			
+		#signin h3{
+			margin-top: 10px;
+			text-align: center;
+			color: black;
+		}
+		#signin input{
+			margin-left: 460px;
+			width: 35%;
+		
+		}
+		@media (max-width: 500px){
+			#signin{
+			margin-top: 30px;
+			
+		}
+		
+		#signin h1{
+			text-align: center;
+			text-decoration: underline;
+			color:coral;
+		}			
+		#signin h3{
+			margin-top: 10px;
+			text-align: center;
+			color: black;
+		}
+		#signin input{
+			margin-left: 110px;
+			width: 35%;
+		
+		}
+		}
+	
+#sbtn{
+		margin-left: 560px;
+		margin-top: 10px;
+		margin-bottom: 19px;
+		width: 10%;
+		font-size: 18px;
+}
+@media (max-width: 500px){
+	#sbtn{
+		margin-left: 120px;
+		margin-top: 10px;
+		margin-bottom: 19px;
+		width: 16%;
+		font-size: 16px;
+}
+}
+	#Electronics{
+		display: none;
+	}
+	 #Electronics h1{
+		text-align: center;
+		color: coral;
+	}
+	 #Electronics.row{
+	 	display: flex;
+	 	align-items: center;
+	 	justify-content: center;
+	 }
+
+	.card{
+		height: 300px;
+		width: 170px;
+		border-radius: 5px solid black;
+		background: coral;
+		margin-left: 150px;
+
+		
+	}
+	.card img{
+		height: 200px;
+		width: 160px;
+		margin-top: 4px;
+		margin-right:4px;
+		margin-left: 4px;
+		margin-bottom: 4px; 
+	}
+	.card p{
+		margin-top: 3px;
+		margin-left: 3px;
+		color: white;
+	}
+
+			#Chairs{
+				display: none;
+			}
+			#Chairs h1{
+					text-align: center;
+		color: coral;
+		margin-top: 3px;
+		margin-bottom: 3px;
+			}
+			#Slippers{
+				display: none;
+			}
+
+			#Slippers h1{
+					text-align: center;
+		color: coral;
+		margin-top: 3px;
+		margin-bottom: 3px;
+			}
+			#Clothes{
+				display: none;
+			}
+			#Clothes h1{
+					text-align: center;
+		color: coral;
+		margin-top: 3px;
+		margin-bottom: 3px;
+			}
+			#Grocery{
+				display: none;
+			}
+			#Grocery h1{
+					text-align: center;
+		color: coral;
+		margin-top: 3px;
+		margin-bottom: 3px;
+			}
+	
+	</style>
+
+</head>
+<body>
+	<!----------------------------------------header-------------------------------------------->
+	<header id="heade">
+		<nav>
+			<div class="logo">Portal</div>
+					<input type="checkbox" id="click">
+			<label for="click" class="menu-btn">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</label>
+			
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="signin.html">Sign In</a></li>
+			</ul>
+		</nav>
+
+		<!-------------------------------------------Poster Nav-------------------------------------------->
+
+		<div class="cont">
+			
+		<h1>Welcome to this portal</h1>
+</div>
+<button class="btn1">Sign In</button>
+<button class="btn2">Learn more</button>
+</header>
+
+<!-------------------------------------------------About Us--------------------------------------------->
+<div id="aboutus">
+	<h1>About Us</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+</div>
+
+<!-------------------------------------Products------------------------------------------------------>
+<div id="products">
+	<h1>Products</h1>
+	<p>There are very good and valuable produts in our stocks.
+	Do check in Produts section to find more.</p>
+	<div id="productsprices">
+		<div class="row">
+			<div class="col3">
+				<img src="https://tse4.mm.bing.net/th?id=OIP.Jcb4wVjQzEFIQCp9_wHQfwHaGk&pid=Api&P=0&w=207&h=184">
+			</div>
+			<div class="col4">
+				<img src="https://tse3.mm.bing.net/th?id=OIP.-SaWJCHVmYx9f7aS5tQZsgHaEy&pid=Api&P=0&w=242&h=157">
+			</div>
+			<div class="col5">
+				<img src="https://tse4.mm.bing.net/th?id=OIP.TQNf7ECHSrG98QsO_kqUpwHaLG&pid=Api&P=0&w=242&h=157">
+			</div>
+		</div>
+	</div>
+	<div id="otherproductsprices">
+	<div class="row">
+			<div class="col6">
+				<img src="https://tse2.mm.bing.net/th?id=OIP._lHDHrIx4dAjk4UBNy1gDgHaH_&pid=Api&P=0&w=300&h=300">
+				
+			</div>
+			<div class="col7">
+				<img src="https://tse1.mm.bing.net/th?id=OIP.O329juc0saz-db6dwpwOzAHaF7&pid=Api&P=0&w=216&h=174">
+			</div>
+			<div class="col8">
+				<img src="https://tse1.mm.bing.net/th?id=OIP.Bv8Su-tl1P__jqzoryjgTQHaEG&pid=Api&P=0&w=277&h=154">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!----------------------------------------------Electronicsitems----------------------->
+<div id="Electronics">
+		<h1>Best Electronics Items</h1>
+	<div class="row">
+	
+		<div class="card">
+			<img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+			<p>Rs. 80,000/-only</p>
+			<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+			
+		</div>
+		<div class="card">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.-ACZbazPUM0gln5oUbP6tQHaFj&pid=Api&P=0&w=222&h=167">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+						
+		</div>
+		<div class="card">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.-ACZbazPUM0gln5oUbP6tQHaFj&pid=Api&P=0&w=222&h=167">
+			            
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+					
+		</div>
+			
+
+	</div>
+
+
+	<br><br>
+	<div class="row">
+		<div class="card">
+			<img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+			<p>Rs. 80,000/-only</p>
+			<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.-ACZbazPUM0gln5oUbP6tQHaFj&pid=Api&P=0&w=222&h=167">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.-ACZbazPUM0gln5oUbP6tQHaFj&pid=Api&P=0&w=222&h=167">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+
+		</div>
+		
+	</div>
+</div>
+
+<!-----------------------------------------------Chair--------------------------------->
+<div id="Chairs">
+		<h1>Best Chairs Items</h1>
+	<div class="row">
+	
+		<div class="card">
+			<img src="https://tse3.mm.bing.net/th?id=OIP.5ssfYjWy51ZmVoggeeYXOwHaHp&pid=Api&P=0&w=300&h=300">
+			<p>Rs. 80,000/-only</p>
+			<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+
+		</div>
+		<div class="card">
+			<img src="https://tse3.mm.bing.net/th?id=OIP.j5VNAYptRa8szb7F5Lp-qgHaG6&pid=Api&P=0&w=178&h=167">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+						
+		</div>
+		<div class="card">
+			<img src="https://tse3.mm.bing.net/th?id=OIP.fBtqlQCXUCBH4a-GZuDH2QHaHa&pid=Api&P=0&w=300&h=300">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+				
+		</div>
+			
+
+	</div>
+	<br><br>
+	<div class="row">
+		<div class="card">
+			<img src="https://tse4.mm.bing.net/th?id=OIP.zq9VwzTdkPNi-rCfyDvetAHaEo&pid=Api&P=0&w=263&h=165">
+			<p>Rs. 80,000/-only</p>
+			<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse2.mm.bing.net/th?id=OIP.eOSMMuqBX-MrmP9YzR8hCQHaJ4&pid=Api&P=0&w=300&h=300">
+						<p>Rs. 50,000/-only</p>
+					<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.Num74aXb81nd9yTPyK7X0QHaLH&pid=Api&P=0&w=300&h=300">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		
+	</div>
+</div>
+
+<!--------------------------------------------------------Slippers-------------------->
+<div id="Slippers">
+		<h1>Best Slippers Items</h1>
+	<div class="row">
+	
+		<div class="card">
+			<img src="https://tse2.mm.bing.net/th?id=OIP.YHtTZ8Gqp6Bls2sczlVUSgHaHa&pid=Api&P=0&w=300&h=300">
+			<p>Rs. 80,000/-only</p>
+			<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.EK7ZeXC_VGbXKDuqCxHJjgHaHa&pid=Api&P=0&w=300&h=300">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.Wm760qbsbDDzMsRVR8b_GQHaHa&pid=Api&P=0&w=300&h=300">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+			
+
+	</div>
+	<br><br>
+	<div class="row">
+		<div class="card">
+			<img src="https://tse3.mm.bing.net/th?id=OIP.3LNg1-D91QoZbD3vsDt9dAHaJG&pid=Api&P=0&w=300&h=300">
+			<p>Rs. 80,000/-only</p>
+			<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse2.mm.bing.net/th?id=OIP.pBnVohmxymbAC9E7M1djUwHaCr&pid=Api&P=0&w=424&h=154">
+						<p>Rs. 50,000/-only</p>
+					<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse4.mm.bing.net/th?id=OIP.q-_wqpixxwlwcLcNT4JKFgHaFj&pid=Api&P=0&w=230&h=173">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		
+	</div>
+</div>
+<!---------------------------------------------Clothes------------------------------------->
+<div id="Clothes">
+		<h1>Best Clothes Items</h1>
+	<div class="row">
+	
+		<div class="card">
+			<img src="https://tse2.mm.bing.net/th?id=OIP.JWA1AnGBtcA4a7G6B-p1SAHaLH&pid=Api&P=0&w=300&h=300">
+			<p>Rs. 80,000/-only</p>
+			<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse4.mm.bing.net/th?id=OIP.EQmbN9NeSly7kSA_J791OwHaGh&pid=Api&P=0&w=173&h=153">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse3.mm.bing.net/th?id=OIP.obi3X73hahF9hBFIWf53nAHaJM&pid=Api&P=0&w=300&h=300">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+			
+
+	</div>
+	<br><br>
+	<div class="row">
+		<div class="card">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.CAtN3fhsgpdCId95XbuzvQHaO1&pid=Api&P=0&w=300&h=300">
+			<p>Rs. 80,000/-only</p>
+			<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse3.mm.bing.net/th?id=OIP.HxO7NoARSPyj1iIQDXUR0AHaJc&pid=Api&P=0&w=300&h=300">
+						<p>Rs. 50,000/-only</p>
+					<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse3.mm.bing.net/th?id=OIP.snE1c67x5rfMJMoVIg5XkAHaKl&pid=Api&P=0&w=300&h=300">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		
+	</div>
+</div>
+
+<!------------------------------------------------Grocery---------------------------->
+<div id="Grocery">
+		<h1>Best Grocery Items</h1>
+	<div class="row">
+	
+		<div class="card">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.nHABuPAMpHDXKI4ymXnHywHaHS&pid=Api&P=0&w=165&h=163">
+			<p>Rs. 80,000/-only</p>
+			<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse2.mm.bing.net/th?id=OIP.Dh7pFto7YSJM6dRwII-EGQHaE8&pid=Api&P=0&w=244&h=164">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse2.mm.bing.net/th?id=OIP.8-99_giqMGXXPeY9XFu6JAHaEo&pid=Api&P=0&w=246&h=154">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+			
+
+	</div>
+	<br><br>
+	<div class="row">
+		<div class="card">
+			<img src="https://tse2.mm.bing.net/th?id=OIP.Hq-XBTWzwqf7plBt6BltgAHaE7&pid=Api&P=0&w=280&h=188">
+			<p>Rs. 80,000/-only</p>
+			<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse4.mm.bing.net/th?id=OIP.SbHdoww1qDljV6EK_h1CDQHaE7&pid=Api&P=0&w=236&h=158">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		<div class="card">
+			<img src="https://tse2.mm.bing.net/th?id=OIP.J5zlK12SSqHVqYq5MYRBagHaEo&pid=Api&P=0&w=255&h=160">
+						<p>Rs. 50,000/-only</p>
+						<form class="ebtn">
+				<a href="ebtn.html">
+				<input type="button" value="order now">
+			</a>
+			</form>
+		</div>
+		
+	</div>
+</div>
+
+<!------------------------------------contacts Us--------------------------------------->
+<div id="contactUs">
+	<h1>Contact Us</h1>
+	<p>For any query plaese contact these numbers.</p>
+	<p><b> Phone No. :-</b>01469-262345,01469-253793</p>
+	<p><b>Mobile No. :-</b>91-9367547865 ,91-9845985674</p>
+
+</div>
+
+<!-----------------------------------------Sign IN---------------------------------->
+<div id="signin">
+	   <h1>Sign In</h1>
+	   
+	   <h3>Name</h3>
+	   <input type="name" name="">
+	   <h3>Email-Id</h3>
+	   <input type="name" name="">
+	   <h3>Password</h3>
+	   <input type="name" name="">
+	   <br>
+	   <button id="sbtn">Sign In</button>
+	  
+	  
+</div>
+
+
+						<!--------------------------------------footer--------------------------------------------------->
+			
+			<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="column">
+						<h3>Company</h3>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Our Services</a></li>
+							<li><a href="#">Programs</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="column">
+						<h3>Get Help</h3>
+						<ul>
+							<li><a href="#">Faq</a></li>
+							<li><a href="#">Shopping</a></li>
+							<li><a href="#">Returns</a></li>
+							<li><a href="#">Payment Options</a></li>
+						</ul>
+					</div>
+					<div class="column">
+						<h3>Online Shop</h3>
+						<ul>
+							<li><a href="#">Shoes</a></li>
+							<li><a href="#">Watches</a></li>
+							<li><a href="#">Grocery</a></li>
+							<li><a href="#">Bag</a></li>
+						</ul>
+					</div>
+					<div class="column">
+						<h3>Follow Us</h3>
+						<div class="social-media">
+							<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signin</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<style type="text/css">
+	*{
+			margin:0;
+			padding: 0;
+			box-sizing: border-box;
+				
+			}
+			#signin{
+			margin-top: 30px;
+			
+		}
+		
+		#signin h1{
+			text-align: center;
+			text-decoration: underline;
+			color:coral;
+		}			
+		#signin h3{
+			margin-top: 10px;
+			text-align: center;
+			color: black;
+		}
+		#signin input{
+			margin-left: 460px;
+			width: 35%;
+		
+		}
+		@media (max-width: 500px){
+			#signin{
+			margin-top: 30px;
+			
+		}
+		
+		#signin h1{
+			text-align: center;
+			text-decoration: underline;
+			color:coral;
+		}			
+		#signin h3{
+			margin-top: 10px;
+			text-align: center;
+			color: black;
+		}
+		#signin input{
+			margin-left: 110px;
+			width: 35%;
+		
+		}
+		}
+	
+#sbtn{
+		margin-left: 560px;
+		margin-top: 10px;
+		margin-bottom: 19px;
+		width: 10%;
+		font-size: 18px;
+}
+@media (max-width: 500px){
+	#sbtn{
+		margin-left: 120px;
+		margin-top: 10px;
+		margin-bottom: 19px;
+		width: 16%;
+		font-size: 16px;
+}
+}
+	#footer{
+				background-color: black;
+				margin-top: 140px;
+				
+			}
+			.row{
+		    display: flex;
+
+			}
+				.column{
+				width: 25%;
+				line-height: 30px;
+				padding-top: 4px;
+				padding-bottom: 4px;
+				padding-left: 8px;
+				padding-right: 4px;
+			}
+		.column h3{
+				color: grey;
+			}
+			.column h3:hover{
+				color:blue;
+				text-decoration: underline;
+			}
+			ul li{
+				list-style: none;
+			}
+			ul li a{
+				text-decoration: none;
+				color: white;
+			}
+			a:hover{
+				color: cyan;
+			}
+		
+			
+			.social-media a{
+				color: white;
+				
+			}
+
+			.social-media a:hover{
+				background-color: grey;
+				color: blue;
+			}
+			@media (max-width: 800px){
+				.row{
+					display: block;
+				}
+				.column h3{
+							margin-right: 40px;
+				}
+				ul li a{
+										margin-right: 40px;
+					
+				}
+				
+		}
+</style>
+<body>
+<div id="signin">
+	   <h1>Sign In</h1>
+	   
+	   <h3>Name</h3>
+	   <input type="name" name="">
+	   <h3>Email-Id</h3>
+	   <input type="name" name="">
+	   <h3>Password</h3>
+	   <input type="name" name="">
+	   <br>
+	   <button id="sbtn">Sign In</button>
+	  
+	  
+</div>
+<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="column">
+						<h3>Company</h3>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Our Services</a></li>
+							<li><a href="#">Programs</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="column">
+						<h3>Get Help</h3>
+						<ul>
+							<li><a href="#">Faq</a></li>
+							<li><a href="#">Shopping</a></li>
+							<li><a href="#">Returns</a></li>
+							<li><a href="#">Payment Options</a></li>
+						</ul>
+					</div>
+					<div class="column">
+						<h3>Online Shop</h3>
+						<ul>
+							<li><a href="#">Shoes</a></li>
+							<li><a href="#">Watches</a></li>
+							<li><a href="#">Grocery</a></li>
+							<li><a href="#">Bag</a></li>
+						</ul>
+					</div>
+					<div class="column">
+						<h3>Follow Us</h3>
+						<div class="social-media">
+							<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+</body>
+</html>
